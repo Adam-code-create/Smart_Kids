@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quiz_bg"
+    android:orientation="vertical"
+    tools:context=".UI.MainActivity">
+
+    <TextView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:id="@+id/questionNumber"
+        android:text="10"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/question_number"
+        app:layout_constraintTop_toTopOf="@id/question_text"
+        app:layout_constraintRight_toRightOf="@id/question_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/frame"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintTop_toTopOf="@id/imageBg"
+        app:layout_constraintBottom_toBottomOf="@id/imageBg"
+        app:layout_constraintRight_toRightOf="@id/imageBg"
+        app:layout_constraintLeft_toLeftOf="@id/imageBg"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/question_bg"
+        android:id="@+id/imageBg"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+            <TextView
+                android:id="@+id/question_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="Katta kishi bilan ko'rishkanda nima deyiladi?"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="@id/frame"
+                app:layout_constraintBottom_toBottomOf="@id/frame"
+                app:layout_constraintLeft_toLeftOf="@id/frame"
+                app:layout_constraintRight_toRightOf="@id/frame"
+                />
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:id="@+id/variant1"
+            android:background="@drawable/variant_bg"
+            android:layout_marginLeft="24dp"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageBg"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_check"
+                android:layout_marginLeft="24dp"
+                />
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="variant"
+                android:layout_marginLeft="24dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:id="@+id/variant2"
+            android:background="@drawable/variant_bg"
+            android:layout_marginLeft="44dp"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/variant1"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_check"
+                android:layout_marginLeft="24dp"
+                />
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="variant"
+                android:layout_marginLeft="24dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:id="@+id/variant3"
+            android:background="@drawable/variant_bg"
+            android:gravity="center"
+            android:layout_marginLeft="64dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/variant2"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_check"
+                android:layout_marginLeft="24dp"
+                />
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="variant"
+                android:layout_marginLeft="24dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:id="@+id/variant4"
+            android:background="@drawable/variant_bg"
+            android:gravity="center"
+            android:layout_marginLeft="84dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/variant3"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_check"
+                android:layout_marginLeft="24dp"
+                />
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="variant"
+                android:textSize="16sp"
+                android:layout_marginLeft="24dp"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/variant4"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@drawable/next_btn"
+            android:text="next"/>
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/home"
+        android:padding="4dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_home"
+        app:layout_constraintTop_toBottomOf="@id/next"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
